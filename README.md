@@ -13,7 +13,7 @@
 
 sudo az policy definition create --name tagPolicyDefinition --description "Policy to Append tags to Resources in RG" --rules append-notags.json
 
-<b> Step3) Assign a Policy to RG within a Subscription <\b>
+<b> Step3) Assign a Policy to RG within a Subscription </b>
 
 sudo az policy assignment create --name tagPolicyAssignment --policy tagPolicyDefinition --scope /subscriptions/\<subscription id>/resourceGroups/\<resource group>
 
