@@ -1,0 +1,15 @@
+{
+ "if": {
+  "field": "tags",
+  "exists": "false"
+  },
+  "then": {
+    "effect": "append",
+    "details": [
+      {
+        "field": "tags",
+        "value": {"dept":"RD", "env":"dev", "deptcostcenter":"1000", "productcostcenter":"1001", "product”:”abc”, "pod": "1"   } 
+      }
+    ]
+  }
+}
