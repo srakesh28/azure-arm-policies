@@ -16,7 +16,7 @@ sudo az policy definition create --name tagPolicyDefinition --description "Polic
 
 Step3) Assign a Policy to RG within a Subscription
 
-sudo az policy assignment create --name tagPolicyAssignment --policy tagPolicyDefinition --scope /subscriptions/<subscription id>/resourceGroups/<resource group>
+sudo az policy assignment create --name tagPolicyAssignment --policy tagPolicyDefinition --scope /subscriptions/\<subscription id>/resourceGroups/\<resource group>
 
 Step4) Display Policy in Effect
 
@@ -24,5 +24,6 @@ sudo az policy definition show --name tagPolicyDefinition
 
 Step5) Delete Policy if not required 
 
-sudo az policy assignment delete --name tagPolicyAssignment --scope /subscriptions/<subscription id>/resourceGroups/<resource group>
+sudo az policy assignment delete --name tagPolicyAssignment --scope /subscriptions/\<subscription id>/resourceGroups/\<resource group>
+
 
