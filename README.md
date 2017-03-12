@@ -4,7 +4,7 @@
 
 <b>How to Apply Tags on RG with Policies</b>
 
-<b> Step1) Create a file called append-notags.json with below format, this will Add Tags to all resources in RG <\b>
+<b> Step1) Create a file called append-notags.json with below format, this will Add Tags to all resources in RG </b>
 
 \<see append-notags.json file>
 
