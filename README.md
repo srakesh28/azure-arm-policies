@@ -2,27 +2,26 @@
 #Sample ARM Policies for Subscription and Resource Groups
 
 
-How to Apply Tags on RG with Policies
+<b>How to Apply Tags on RG with Policies</b>
 
-Step1) Create a file called append-notags.json with below format, this will Add Tags to all resources in RG 
+<b> Step1) Create a file called append-notags.json with below format, this will Add Tags to all resources in RG <\b>
 
-<see append-notags.json file>
+\<see append-notags.json file>
 
 
-
-Step2) Create a Policy 
+<b> Step2) Create a Policy </b>
 
 sudo az policy definition create --name tagPolicyDefinition --description "Policy to Append tags to Resources in RG" --rules append-notags.json
 
-Step3) Assign a Policy to RG within a Subscription
+<b> Step3) Assign a Policy to RG within a Subscription <\b>
 
 sudo az policy assignment create --name tagPolicyAssignment --policy tagPolicyDefinition --scope /subscriptions/\<subscription id>/resourceGroups/\<resource group>
 
-Step4) Display Policy in Effect
+<b> Step4) Display Policy in Effect </b>
 
 sudo az policy definition show --name tagPolicyDefinition
 
-Step5) Delete Policy if not required 
+<b> Step5) Delete Policy if not required  </b>
 
 sudo az policy assignment delete --name tagPolicyAssignment --scope /subscriptions/\<subscription id>/resourceGroups/\<resource group>
 
