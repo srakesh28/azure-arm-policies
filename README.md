@@ -6,23 +6,7 @@ How to Apply Tags on RG with Policies
 
 Step1) Create a file called append-notags.json with below format, this will Add Tags to all resources in RG 
 
-
-{
- "if": {
-  "field": "tags",
-  "exists": "false"
-  },
-  "then": {
-    "effect": "append",
-    "details": [
-      {
-        "field": "tags",
-        "value": {"dept":"RD", "env":"dev", "deptcostcenter":"1000", "productcostcenter":"1001", "product”:”abc”, "pod": "1"   } 
-      }
-    ]
-  }
-}
-
+<see append-notags.json file>
 
 
 
